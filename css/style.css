@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    margin: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: red;
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+h1{
+    color: gray;
+}

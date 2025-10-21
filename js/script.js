@@ -1,125 +1,57 @@
-alert("It's working!");
-
-console.log("banana");
-
-// Var let const =======
-var fruit = "Apple";
-let fol = "Orange";
-
-console.log(fol);
-let food = 10;
-
-console.log(food);
-
-const pi = 3.1416;
-console.log(pi);
-
-let sum = "5" + 17;
-console.log(sum);
-
-// Var let const =======
-
-// scope =======
-{
-  let name = "Rita";
-  const age = 25;
-
-  console.log(name, age);
-}
-
-{
-    var home = 'New York'
-}
-console.log(home);
-
-let city = "London";
-function jaiga() {
+function info(nam, boyos) {
+    console.log(`My name is ${nam} and My age is ${boyos}.`);
     
 }
-jaiga()
-console.log(city);
+info('Anto', 16);
+info('Anika', 17);
+info('Rita', 10);
+info('Mita', 11);
+info('Antora', 19);
 
+// Map ========= 
+const group = ([2, 3, 4, 5]);
 
-
-// scope =======
-
-// Condition Start 
-let boyos = 15;
-if (boyos >= 20) {
-    console.log('You can Vote');
+group.map((ele) => {
+    console.log(ele*2);
     
-}
-else{
-    console.log('You cannot Vote');
+})
+// Map ========= 
+// Type of ========= 
+let year = 'Mahfil';
+console.log(typeof year);
+
+// Type of ========= 
+// Document Object Model 
+let heading = document.querySelector('h1');
+let headingTwo = document.querySelector('.tita')
+console.log(headingTwo.innerText);
+
+// // AddEventListenner =======
+// let btn = document.querySelector('button'); 
+//  btn.addEventListener('click', () => {
+// btn.style.color='red'
+// btn.style.background='blue'
     
-}
-let num = 97;
-// 1st if condition 
-if (num > 32 && num < 40) {
-  console.log("You got D");
-}
-// 1st else if condition 
-else if (num >= 40 && num < 50) {
-  console.log("You got C");
-  
-}
-// 2nd else if 
-else if (num >= 50 && num < 60) {
-  console.log("you got B");
-  
-}
-// 3rd else if 
-else if (num >= 60 && num < 70) {
-  console.log(" You got A-");
-  
-}
-// 4th else if 
-else if (num >=70 && num < 80) {
-  console.log("You got A");
-  
-}
-// 5th else if 
-else if (num >=80 && num <100) {
-  console.log("You got A+");
-  
-}
-// 1st else 
-else {
-  console.log("You got F");
-  
-}
-// Condition End
+//  })
+let anotherText = document.querySelector('.tita')
+let headText = document.querySelector('h1')
+let dark = document.querySelector('.dark')
+let light = document.querySelector('.light')
 
-// For Loop 
-let namta = 31;
-for (let i = 1; i <= 10; i++) {
-    console.log(`${namta} x ${i} = ${namta*i}`);
+dark.addEventListener('click', ()=> {
+document.body.style.background='gray'
+headText.style.color='white'
+anotherText.style.color='blue'
+})
+
+light.addEventListener('click', ()=> {
+document.body.style.background='pink'
+})
+
+let inputName = document.querySelector('input')
+inputName.addEventListener('keyup', () => {
+    console.log(inputName.value);
     
-    
-}
-// For Loop 
-//Arrow Function
-let hello = () => {
-    console.log('Arrow Function.');
-    
-}
-hello();
-//Arrow Function
-// Array 
-let fruits = ['Mango', 'Banana', 'Apple'];
-console.log(fruits[2]);
-
-// Array 
-// Object 
-let person = {
-    nam : 'Peter',
-    area : 'Shatkhira',
-    marks : 67
-}
-console.log(person);
-
-// Object 
-
-
-
-
+}) 
+// AddEventListenner ======= 
+// Document Object Model 
